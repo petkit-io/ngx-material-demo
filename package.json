@@ -1,6 +1,6 @@
 {
   "name": "@petkit/ngx-material-demo",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "angular material demo component",
   "main": "index.js",
   "scripts": {
