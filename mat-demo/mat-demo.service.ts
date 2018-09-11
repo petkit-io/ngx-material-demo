@@ -13,5 +13,9 @@ export class MatDemoService {
   get baseUrl() {
     return this._config.baseUrl;
   }
+
+  get suffixes() {
+    return this._config.suffixes;
+  }
 }
 

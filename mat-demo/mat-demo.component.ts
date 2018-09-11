@@ -29,7 +29,7 @@ export class MatDemoComponent implements OnInit {
   @Input()
   desc: string;
 
-  suffixes = ['html', 'ts', 'scss'];
+  suffixes: string[] = [];
   codes: {
     [suffix: string]: string,
   } = {};
@@ -39,7 +39,9 @@ export class MatDemoComponent implements OnInit {
   constructor(
     private _http: HttpClient,
     private _config: MatDemoService,
-  ) { }
+  ) {
+    this.suffixes = _config.suffixes as string[];
+  }
 
   ngOnInit() {
     this._init();

@@ -30,12 +30,18 @@ import { IMatDemoConfig } from './mat-demo.interface';
   ]
 })
 export class MatDemoModule {
-  static forRoot(config: IMatDemoConfig): ModuleWithProviders {
+  static forRoot({
+    baseUrl,
+    suffixes = ['html', 'ts', 'scss'],
+  }: IMatDemoConfig): ModuleWithProviders {
     return {
       ngModule: MatDemoModule,
       providers: [MatDemoService, {
         provide: 'config',
-        useValue: config,
+        useValue: {
+          baseUrl,
+          suffixes,
+        },
       }]
     };
   }
