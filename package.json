@@ -15,11 +15,9 @@
     },
     "whitelistedNonPeerDependencies": []
   },
-  "dependencies": {
-    "@petkit/ngx-highlight": "^1.0.0"
-  },
   "peerDependencies": {
-    "@angular/material": "^6.0.0"
+    "@angular/material": "^6.0.0",
+    "@petkit/ngx-highlight": "^1.0.0"
   },
   "repository": {
     "type": "git",
