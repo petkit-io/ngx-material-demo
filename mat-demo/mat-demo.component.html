@@ -1,0 +1,23 @@
+<mat-accordion class="ngx-mat-demo__container">
+  <mat-expansion-panel [style.margin]="0">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        {{title || compName}}
+      </mat-panel-title>
+      <mat-panel-description>
+        {{desc}}
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <mat-tab-group>
+      <mat-tab *ngFor="let suffix of suffixes" [label]="suffix">
+        <ngx-highlight class="ngx-mat-demo__highlight" [code]="codes[suffix]" [lang]="suffix"></ngx-highlight>
+      </mat-tab>
+    </mat-tab-group>
+  </mat-expansion-panel>
+
+  <div class="ngx-mat-demo__content">
+    <ng-content></ng-content>
+  </div>
+</mat-accordion>
+

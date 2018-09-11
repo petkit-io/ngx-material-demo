@@ -1,0 +1,35 @@
+@mixin ngx-mat-demo-theme() {
+  .ngx-mat-demo {
+    &__container {
+      .mat-expansion-panel-header {
+        border-bottom: 1px solid #eeeeee;
+      }
+
+      .mat-expansion-panel-body {
+        padding: 0;
+      }
+    }
+
+    &__content {
+      box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14);
+      color: rgba(0, 0, 0, .87);
+      background: white;
+
+      padding: 24px;
+      margin-bottom: 8px;
+    }
+
+    &__highlight {
+      .ngx-highlight__pre {
+        margin: 0;
+      }
+
+      .hljs {
+        min-height: 160px;
+      }
+    }
+  }
+}
+
+@include ngx-mat-demo-theme();
+

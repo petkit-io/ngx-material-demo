@@ -1,0 +1,43 @@
+{
+  "name": "@petkit/ngx-material-demo",
+  "version": "1.0.0",
+  "description": "angular material demo component",
+  "main": "index.js",
+  "scripts": {
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
+    "commitmsg": "commitlint -e $GIT_PARAMS"
+  },
+  "ngPackage": {
+    "dest": "../../../dist/ngx-material-demo",
+    "lib": {
+      "entryFile": "public-api.ts",
+      "umdModuleIds": {}
+    },
+    "whitelistedNonPeerDependencies": []
+  },
+  "peerDependencies": {
+    "@angular/material": "^6.0.0",
+    "@petkit/ngx-highlight": "^1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/petkit-io/ngx-material-demo.git"
+  },
+  "keywords": [
+    "angular",
+    "material",
+    "demo",
+    "component"
+  ],
+  "author": "liuxin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/petkit-io/ngx-material-demo/issues"
+  },
+  "homepage": "https://github.com/petkit-io/ngx-material-demo#readme",
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
+}
