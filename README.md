@@ -7,7 +7,7 @@
 npm install --save-dev @petkit/ngx-material-demo
 ```
 
-This package depend on `[@petkit/ngx-highlight](https://github.com/petkit-io/ngx-highlight)` to highlight code.
+This package depend on [@petkit/ngx-highlight](https://github.com/petkit-io/ngx-highlight) to highlight code.
 
 # Usage
 ## Import Module
