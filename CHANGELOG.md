@@ -1,3 +1,13 @@
+<a name="1.0.4"></a>
+## [1.0.4](https://github.com/petkit-io/ngx-material-demo/compare/v1.0.3...v1.0.4) (2018-09-13)
+
+
+### Features
+
+* **mat-demo:** lazy load assets ([81f9423](https://github.com/petkit-io/ngx-material-demo/commit/81f9423))
+
+
+
 <a name="1.0.3"></a>
 ## [1.0.3](https://github.com/petkit-io/ngx-material-demo/compare/v1.0.2...v1.0.3) (2018-09-11)
 
