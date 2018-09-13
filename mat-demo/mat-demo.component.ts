@@ -53,19 +53,32 @@ export class MatDemoComponent implements OnInit {
     if (!this._opened) {
       this._opened = true;
 
-      this._init();
+      this._requestAssets();
     }
   }
 
   private _init() {
-    const pathArr = `${this._config.baseUrl}/${this.path}`.split('/').filter(v => !!v);
+    const pathArr = `${this.path}`.split('/').filter(v => !!v);
 
     if (pathArr.length === 0) {
       throw new Error('Invalid path!');
     }
 
     const compFilename = pathArr[pathArr.length - 1];
-    const compPath = '/' + pathArr.join('/');
+    // default title
+    this.compName = compFilename.replace(/-(\w)/g, (match, p1) => match && p1.toUpperCase()).replace(/\w/, match => match.toUpperCase());
+  }
+
+  private _requestAssets() {
+    const pathArr = `${this.path}`.split('/').filter(v => !!v);
+
+    if (pathArr.length === 0) {
+      throw new Error('Invalid path!');
+    }
+
+    const compFilename = pathArr[pathArr.length - 1];
+    const baseUrl = this._config.baseUrl;
+    const compPath = baseUrl + (baseUrl[baseUrl.length - 1] === '/' ? '' : '/') + pathArr.join('/');
 
     this.suffixes.forEach(suffix => {
       const url = `${compPath}/${compFilename}.component.${suffix}`;
@@ -75,9 +88,6 @@ export class MatDemoComponent implements OnInit {
         this.codes[suffix] = res;
       });
     });
-
-    // default title
-    this.compName = compFilename.replace(/-(\w)/g, (match, p1) => match && p1.toUpperCase()).replace(/\w/, match => match.toUpperCase());
   }
 }
 
