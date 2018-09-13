@@ -36,6 +36,8 @@ export class MatDemoComponent implements OnInit {
 
   compName = '';
 
+  private _opened = false;
+
   constructor(
     private _http: HttpClient,
     private _config: MatDemoService,
@@ -45,6 +47,14 @@ export class MatDemoComponent implements OnInit {
 
   ngOnInit() {
     this._init();
+  }
+
+  onExpansionOpened() {
+    if (!this._opened) {
+      this._opened = true;
+
+      this._init();
+    }
   }
 
   private _init() {

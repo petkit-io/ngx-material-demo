@@ -1,5 +1,5 @@
 <mat-accordion class="ngx-mat-demo__container">
-  <mat-expansion-panel [style.margin]="0">
+  <mat-expansion-panel (opened)="onExpansionOpened()" [style.margin]="0">
     <mat-expansion-panel-header>
       <mat-panel-title>
         {{title || compName}}
