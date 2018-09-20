@@ -1,3 +1,13 @@
+<a name="1.0.5"></a>
+## [1.0.5](https://github.com/petkit-io/ngx-material-demo/compare/v1.0.4...v1.0.5) (2018-09-20)
+
+
+### Bug Fixes
+
+* **mat-demo:** fix lazy load ([4eec590](https://github.com/petkit-io/ngx-material-demo/commit/4eec590))
+
+
+
 <a name="1.0.4"></a>
 ## [1.0.4](https://github.com/petkit-io/ngx-material-demo/compare/v1.0.3...v1.0.4) (2018-09-13)
 
