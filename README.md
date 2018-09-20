@@ -1,7 +1,7 @@
 # Angualr Material Demo Component
 [demo](https://stackblitz.com/edit/sora-angular-material-demo)
 
-![example](https://github.com/petkit-io/assets/blob/master/ngx-material-demo.gif)
+![example](https://raw.githubusercontent.com/petkit-io/assets/master/ngx-material-demo.gif)
 
 # Installation
 
